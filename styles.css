@@ -1,0 +1,185 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    width: 1440px;
+    margin-left: 50px;
+    font-family: "Inter", inter;
+    background: hsl(36, 100%, 99%);
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    font-size: 1.4rem;
+    height: 5rem;
+    color: hsl(236, 13%, 42%);
+}
+
+.nav-item {
+    margin-right: 2.25rem;
+}
+
+.entire-middle-section {
+    height: 60vh;
+    display: grid;
+    grid-template-areas: "a a a a b b"
+                         "a a a a b b"
+                         "a a a a b b";
+}
+
+.main-left {
+    grid-area: a;
+    width: 900px;
+    margin-right: 40px;
+}
+
+.middle-section-image {
+    height: 45vh;
+    width: 900px;
+}
+
+.middle-section-wrapper {
+    display: grid;
+    grid-template-areas: "a a b b"
+                         "a a b b"
+                         "a a c c";
+}
+
+.header-wrapper {
+    display: flex;
+    align-items: center;
+    height: 200px;
+    width: 300px;
+}
+
+.header-main-left {
+    grid-area: a;
+    font-size: 3.2rem;
+    color:hsl(240, 100%, 5%);
+    display: flex;
+    text-shadow: 1px 0 hsl(240, 100%, 5%);
+    letter-spacing:1px;
+    font-weight:bold;
+}
+
+.content-main-left {
+    grid-area: b;
+    font-size: 1.2rem;
+    width: 450px;
+    padding-top: 30px;
+    color:hsl(236, 13%, 42%);
+    font-weight: 700;
+}
+
+.read-more {
+    width: 200px;
+    grid-area: c;
+    background: hsl(5, 85%, 63%);
+    color: hsl(36, 100%, 99%);
+    border: hsl(5, 85%, 63%);
+    height: 50px;
+    font-size: 1.4rem;
+    margin-top: -2.5rem;
+    letter-spacing: 6px;
+}
+
+.new-section {
+    grid-area: b;
+    display: flex;
+    height: 68vh;
+    flex-direction: column;
+    background: hsl(240, 100%, 5%);
+    color: white;
+}
+
+.header-new-section {
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    color: hsl(35, 77%, 62%);
+    font-weight: 700;
+    margin-bottom: -2.2rem;
+}
+
+hr {
+    border: 1px solid hsl(236, 13%, 42%);
+    width: 85%;
+    margin-left: 2rem;
+}
+
+.sub-section {
+    height: 10rem;
+    margin-left: 3rem;
+}
+
+.header-sub-section {
+    font-size: 1.7rem;
+    color: hsl(36, 100%, 99%);
+    font-weight: 700;
+    margin-bottom: 1rem;
+    margin-top: 1.6rem;
+}
+
+.content-sub-section {
+    color:hsl(236, 13%, 42%);
+    font-weight: 700;
+    font-size: 1.25rem;
+    padding-right: 4rem;
+}
+
+.top-three {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.footer-element {
+    margin: 7rem 1rem 0.75rem 1rem;
+    display: grid;
+    grid-template-areas: "a b b"
+                         "a c c"
+                         "a d d";
+}
+
+.footer-element-image {
+    display: grid;
+    grid-area: a;
+    margin-right: 1rem;
+}
+
+.footer-element-number {
+    display: grid;
+    grid-area: b;
+    font-size: 1.675rem;
+    font-weight: 700;
+    color:hsl(236, 13%, 42%);
+}
+
+.footer-element-header {
+    display: grid;
+    grid-area: c;
+    margin: 0.5rem 0;
+    font-weight: 900;
+    font-size: 1.2rem;
+}
+
+.footer-element-content {
+    display: grid;
+    grid-area: d;
+}
+
+/*
+"footer-element-number">03</div>
+      <div class="footer-element-header">The Growth of Gaming</div>
+      <div class="footer-element-content"
+*/
+
+img {
+    width: 150px;
+    height: 106px;
+}
